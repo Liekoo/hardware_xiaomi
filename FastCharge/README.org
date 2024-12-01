@@ -1,0 +1,37 @@
+#+TITLE: FastCharge
+
+* Table of contents
+:PROPERTIES:
+:TOC:
+:END:
+:CONTENTS:
+- [[#about][About]]
+- [[#usage][Usage]]
+- [[#purpose][Purpose]]
+- [[#credits][Credits]]
+:END:
+
+* About
+
+ROM Frontend for fast charging toggle.
+
+* Usage
+
+** 1) Clone this repository to the specified directory
+
+#+BEGIN_SRC shell
+git clone https://github.com/cyberknight777/android_packages_apps_FastCharge packages/apps/FastCharge
+#+END_SRC
+
+** 2) Adapt the following commit for your device and build it as it is :)
+
+https://github.com/YAAP/device_xiaomi_sunny/commit/55862f9647af5485c20e00021fde61e3f08a1f79
+
+* Purpose
+
++ To provide a toggle for fast charging instead of using LineageOS' HIDL HAL.
+
+#+END_SRC
+* Credits
+
++ [[https://github.com/cyberknight777/android_packages_apps_DisplayFeatures][DisplayFeatures]] as it is the base for this package.
