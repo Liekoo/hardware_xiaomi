@@ -79,7 +79,7 @@ public class FastChargeFragment extends PreferenceFragmentCompat implements
         // Registering observers
         IntentFilter filter = new IntentFilter();
         filter.addAction(mConfig.ACTION_FAST_CHARGE_SERVICE_CHANGED);
-        getContext().registerReceiver(mServiceStateReceiver, filter);
+        getContext().registerReceiver(mServiceStateReceiver, filter, Context.RECEIVER_EXPORTED);
     }
 
     @Override

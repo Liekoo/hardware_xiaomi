@@ -69,7 +69,7 @@ public class FastChargeTileService extends TileService {
         updateUI();
 
         IntentFilter filter = new IntentFilter(mConfig.ACTION_FAST_CHARGE_SERVICE_CHANGED);
-        registerReceiver(mServiceStateReceiver, filter);
+        registerReceiver(mServiceStateReceiver, filter, Context.RECEIVER_EXPORTED);
     }
 
     @Override
