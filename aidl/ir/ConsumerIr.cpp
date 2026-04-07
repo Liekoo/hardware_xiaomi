@@ -53,7 +53,7 @@ unsigned char default_tx[MAX_TX_BUFFER];
 
     // Calculate pattern to send using spi
     // NOTE: The following code was a result of decompilation from original consumer ir library and processing by gemini.
-    for (unsigned int i = 0; i < pattern_len; i++) {
+    for (unsigned int i = 0; i < entries; i++) {
         // Calculate scaling based on pulse duration
         int pulse_duration = pattern[i];
         int scaled_len = (pulse_duration * 38) / 1000; // 0x26 = 38
